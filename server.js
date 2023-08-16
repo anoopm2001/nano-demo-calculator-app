@@ -14,9 +14,10 @@ baseRouter.get("/greeting", (req, res) => {
 });
 
 baseRouter.post("/add", (req, res) => {
-  const first = req.body.first;
-  const second = req.body.second;
-  res.json({ result: first + second });
+  var first = req.body.first;
+  var second = req.body.second;
+  var ans = first + second;
+  res.json({ result: ans });
 });
 
 baseRouter.post("/subtract", (req, res) => {
